@@ -1,0 +1,35 @@
+.editable-field {
+    //background-color: #e5e8e9;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.editable-field-p {
+    width: 258px;
+    overflow: hidden;
+    padding: 4px;
+    line-height: 32px;    
+}
+
+.field-container {
+    display:flex;
+    flex-direction:row;
+    // background-color: #e5e8e9;
+    padding: 4px;
+    align-items: center;
+    position: relative;
+    max-width: 400px;
+    
+    .submit-button {
+        margin-left: -20px;
+        vertical-align: middle;
+    }
+    
+    .cancel-button {
+        
+    }
+}
+
+.edit-field-button {
+    float: right;
+}

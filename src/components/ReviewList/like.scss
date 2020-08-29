@@ -1,0 +1,14 @@
+.like-container {
+    display: flex;
+    align-items: center;
+}
+
+.like {
+    margin-left: 8px;
+    transition: all 100ms ease-in;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.3);
+    }
+}

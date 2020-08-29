@@ -1,0 +1,25 @@
+.map-container {
+    width: 200px;
+    height: 200px;
+    // filter: blur(5px);
+}
+
+.marker-styles {
+    background:url('/map-pin.svg');
+    width: 50px;
+    height: 50px;
+    text-align: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+    
+    p {
+        padding-top: 5px;
+    }
+}
+
+.mapboxgl-ctrl-bottom-left {
+    /* Yes d-bag move, but that's how I roll. Let them wonder if I'm using Google Maps! */
+    display: none;
+}

@@ -1,0 +1,2 @@
+export const GET_USER_LOCATION = 'GET_USER_LOCATION';
+export const UPDATE_MAP = 'UPDATE_MAP';

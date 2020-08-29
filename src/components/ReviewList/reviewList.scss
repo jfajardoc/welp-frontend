@@ -1,0 +1,43 @@
+.review-list-heading {
+    font-weight: 600;
+    font-size: 22px;
+    color: lighten(#000, 15%);
+    display: row;
+    align-items: center;
+}
+
+.review-list {
+    max-height: 350px;
+    overflow-y: scroll;
+}
+
+.review-list-heading-separator {
+    border-top: none;
+    border-bottom: 1px solid #d3d3d3;
+    margin-top: 16px;
+}
+
+
+.review-list-bottom-separator {
+    border-top: none;
+    border-bottom: 1px solid #d3d3d3;
+    margin-top: 16px;
+}
+
+.add-review-button {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    width: 100%;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    padding: 16px;
+    transition: all 0.25 ease-in;
+    cursor: pointer;
+    background: #064f6f;
+    color: #fff;
+
+    &:hover {
+        background: lighten(#064f6f, 10%)
+    }
+}
