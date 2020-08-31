@@ -1,1 +1,1 @@
-export const BASE_URL = 'http://trywelp.xyz:8081';
+export const BASE_URL = 'process.env.REACT_APP_BASE_URL';

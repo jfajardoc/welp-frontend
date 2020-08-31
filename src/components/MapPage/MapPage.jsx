@@ -18,7 +18,7 @@ function MapPage(props) {
     useEffect(() => {
         if(localStorage.token){
             getUser(localStorage.token);
-            getUserLocationRequest()
+            getUserLocationRequest();
         } else {
             history.push('/');
         }
