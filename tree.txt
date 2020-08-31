@@ -1,0 +1,80 @@
+./src
+|-- components
+|   |-- EditableField
+|   |   |-- EditableField.jsx
+|   |   `-- editableField.scss
+|   |-- Footer
+|   |   |-- Footer.jsx
+|   |   `-- footer.scss
+|   |-- Login
+|   |   |-- Login.jsx
+|   |   |-- ValidationMessage.jsx
+|   |   `-- login.scss
+|   |-- MapPage
+|   |   |-- MapPage.jsx
+|   |   `-- mapPage.scss
+|   |-- Modal
+|   |   |-- Modal.jsx
+|   |   `-- modal.scss
+|   |-- NavBar
+|   |   |-- Nav.jsx
+|   |   |-- NavBar.jsx
+|   |   `-- navBar.scss
+|   |-- NewModal
+|   |   |-- NewModal.jsx
+|   |   `-- newModal.scss
+|   |-- NewReview
+|   |   |-- NewReview.jsx
+|   |   |-- StarRating.jsx
+|   |   `-- newReview.scss
+|   |-- Profile
+|   |   |-- Profile.jsx
+|   |   `-- profile.scss
+|   |-- ReviewList
+|   |   |-- Like.jsx
+|   |   |-- Review.jsx
+|   |   |-- ReviewList.jsx
+|   |   |-- StarRatingDisplay.jsx
+|   |   |-- like.scss
+|   |   |-- review.scss
+|   |   |-- reviewList.scss
+|   |   `-- star-rating-display.scss
+|   `-- Signup
+|       `-- Signup.jsx
+|-- constants
+|   `-- index.js
+|-- globalStyles.scss
+|-- index.js
+|-- redux
+|   |-- index.js
+|   |-- locations
+|   |   |-- locationActions.js
+|   |   |-- locationTypes.js
+|   |   `-- locationsReducer.js
+|   |-- login
+|   |   |-- loginActions.js
+|   |   |-- loginReducer.js
+|   |   `-- loginTypes.js
+|   |-- map
+|   |   |-- mapActions.js
+|   |   |-- mapReducer.js
+|   |   `-- mapTypes.js
+|   |-- modals
+|   |   |-- modalActions.js
+|   |   |-- modalReducer.js
+|   |   `-- modalTypes.js
+|   |-- reviews
+|   |   |-- reviewActions.js
+|   |   |-- reviewReducer.js
+|   |   `-- reviewTypes.js
+|   |-- rootReducer.js
+|   |-- store.js
+|   `-- users
+|       |-- userActions.js
+|       |-- userReducer.js
+|       `-- userTypes.js
+`-- test
+    |-- App.test.js
+    `-- setupTests.js
+
+21 directories, 56 files
