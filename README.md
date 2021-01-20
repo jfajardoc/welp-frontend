@@ -35,4 +35,4 @@ This app relies on your browser location to render the initial view. Due to secu
 
   `npm start`
 
-- If you haven't done so, check the [backend instructions](https://github.com/ThatJohn/welp-be).
+- If you haven't done so, check the [backend instructions](https://github.com/ThatJohn/welp-backend).
