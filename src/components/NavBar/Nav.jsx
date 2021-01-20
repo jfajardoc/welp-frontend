@@ -6,7 +6,6 @@ import {FaUser, FaSignOutAlt} from 'react-icons/fa'
 import './navBar.scss';
 
 function Nav(props) {
-    // const TOKEN = process.env.REACT_APP_TOKEN;
 
     const [state, setState] = useState({
         isUserInfoActive: false

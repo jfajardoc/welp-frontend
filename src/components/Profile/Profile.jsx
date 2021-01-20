@@ -4,6 +4,7 @@ import { getUser, closeModal } from '../../redux';
 import EditableField from '../EditableField/EditableField';
 import {IconContext} from 'react-icons';
 import {FaPencilAlt, FaCheck} from 'react-icons/fa';
+import {BASE_URL} from '../../constants';
 import './profile.scss';
 
 function Profile(props) {
@@ -31,7 +32,7 @@ function Profile(props) {
         const formData = new FormData();
         formData.append('profile_pic', state.image);
 
-        await fetch(`/profile/${props.currentUser.userId}`, {
+        await fetch(`${BASE_URL}/profile/${props.currentUser.userId}`, {
             method: 'PATCH',
             body: formData
         }).then(response => response.json());

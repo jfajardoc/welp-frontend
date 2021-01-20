@@ -1,68 +1,38 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🗺️ Welcome to Welp 🗺️
 
-## Available Scripts
+This is a practice project that was born out of inspiration from Yelp. Users are able to click on locations on a map to see reviews left by other users; or they can leave a review if there's none. Users are able to like reviews left by other users and see/edit their own profiles.
 
-In the project directory, you can run:
+![](welp.gif)
 
-### `yarn start`
+## How to run
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### First, a note about HTTPS/SSL
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+This app relies on your browser location to render the initial view. Due to security reasons, modern browsers block location requests if HTTPS is not enabled. You can create and trust a self signed certificate or you can run the app without it, but it won't start in your approximate location.
 
-### `yarn test`
+- Click here for instructions on how to create a self-signed SSL certificate for [Linux](https://www.rosehosting.com/blog/how-to-generate-a-self-signed-ssl-certificate-on-linux/), [Windows](https://support.sophos.com/support/s/article/KB-000038223?language=en_US) and [Mac](https://support.apple.com/guide/keychain-access/create-self-signed-certificates-kyca8916/mac).
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Once you have a certificate (`.crt` and `.key`files), edit your `package.json` file and edit your start script:
 
-### `yarn build`
+  `HTTPS=true SSL_CRT_FILE=cert.crt SSL_KEY_FILE=cert.key npm start`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  Your browser will then complain about not trusting a self-signed certificate, just add it to your keyring and that's it. Alternatively, you can skip the certificate, but you will have to move the map to your location by yourself.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Go to [mapbox.com](https://mapbox.com) and sign up for an account. After your account has been confirmed, you'll see an API key in the lower left box of your dashboard. Copy this API key for the next step.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Set up the required environment variable. Depending on your system, you might have to edit either ~/.bashrc, /etc/profile, ~/.bash_profile, etc. and add:
 
-### `yarn eject`
+  ```
+  export REACT_APP_TOKEN='API key obtained in previous step'
+  export REACT_APP_BASE_URL='http://localhost:3000'
+  ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Install dependencies:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  `npm install`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Run app:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  `npm start`
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- If you haven't done so, check the [backend instructions](https://github.com/ThatJohn/welp-be).
